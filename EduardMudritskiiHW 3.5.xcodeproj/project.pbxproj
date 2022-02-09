@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235D277427ADA90900EDA77F /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D277327ADA90900EDA77F /* ContactsList.swift */; };
+		235D277627ADB3C300EDA77F /* SectionsContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D277527ADB3C200EDA77F /* SectionsContactList.swift */; };
+		237131AA27B3C454004140A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237131A927B3C454004140A0 /* ContentView.swift */; };
 		23748D7727AB08A0000A7302 /* EduardMudritskiiHW_3_5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748D7627AB08A0000A7302 /* EduardMudritskiiHW_3_5App.swift */; };
-		23748D7927AB08A0000A7302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748D7827AB08A0000A7302 /* ContentView.swift */; };
 		23748D7B27AB08A5000A7302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23748D7A27AB08A5000A7302 /* Assets.xcassets */; };
 		23748D7E27AB08A5000A7302 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23748D7D27AB08A5000A7302 /* Preview Assets.xcassets */; };
+		23748D8527AB0F4B000A7302 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748D8427AB0F4B000A7302 /* DataManager.swift */; };
+		23748D8727AB0FA1000A7302 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748D8627AB0FA1000A7302 /* Person.swift */; };
+		23748D8927AB1370000A7302 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748D8827AB136F000A7302 /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		235D277327ADA90900EDA77F /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
+		235D277527ADB3C200EDA77F /* SectionsContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsContactList.swift; sourceTree = "<group>"; };
+		237131A927B3C454004140A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../ContentView.swift; sourceTree = "<group>"; };
 		23748D7327AB089F000A7302 /* EduardMudritskiiHW 3.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EduardMudritskiiHW 3.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23748D7627AB08A0000A7302 /* EduardMudritskiiHW_3_5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduardMudritskiiHW_3_5App.swift; sourceTree = "<group>"; };
-		23748D7827AB08A0000A7302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23748D7A27AB08A5000A7302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23748D7D27AB08A5000A7302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23748D8427AB0F4B000A7302 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		23748D8627AB0FA1000A7302 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		23748D8827AB136F000A7302 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		237131A627B3C30A004140A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				237131A927B3C454004140A0 /* ContentView.swift */,
+				235D277327ADA90900EDA77F /* ContactsList.swift */,
+				23748D8827AB136F000A7302 /* PersonView.swift */,
+				235D277527ADB3C200EDA77F /* SectionsContactList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		237131A727B3C34D004140A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23748D8627AB0FA1000A7302 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		237131A827B3C360004140A0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				23748D8427AB0F4B000A7302 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		23748D6A27AB089F000A7302 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +88,10 @@
 		23748D7527AB089F000A7302 /* EduardMudritskiiHW 3.5 */ = {
 			isa = PBXGroup;
 			children = (
+				237131A627B3C30A004140A0 /* Views */,
+				237131A827B3C360004140A0 /* Managers */,
+				237131A727B3C34D004140A0 /* Models */,
 				23748D7627AB08A0000A7302 /* EduardMudritskiiHW_3_5App.swift */,
-				23748D7827AB08A0000A7302 /* ContentView.swift */,
 				23748D7A27AB08A5000A7302 /* Assets.xcassets */,
 				23748D7C27AB08A5000A7302 /* Preview Content */,
 			);
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23748D7927AB08A0000A7302 /* ContentView.swift in Sources */,
+				235D277427ADA90900EDA77F /* ContactsList.swift in Sources */,
+				237131AA27B3C454004140A0 /* ContentView.swift in Sources */,
+				23748D8527AB0F4B000A7302 /* DataManager.swift in Sources */,
+				235D277627ADB3C300EDA77F /* SectionsContactList.swift in Sources */,
+				23748D8727AB0FA1000A7302 /* Person.swift in Sources */,
 				23748D7727AB08A0000A7302 /* EduardMudritskiiHW_3_5App.swift in Sources */,
+				23748D8927AB1370000A7302 /* PersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
